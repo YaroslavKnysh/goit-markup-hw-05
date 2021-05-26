@@ -693,14 +693,12 @@ a {
   margin-bottom: -30px;
 }
 .portfolio-projects-item {
-  position: relative;
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
-  cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
 }
+
 .portfolio-projects-item:hover,
 .portfolio-projects-item:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
@@ -723,21 +721,26 @@ a {
 .portfolio-img {
   display: block;
 }
+.portfolio-overlay-container {
+  position: relative;
+  overflow: hidden;
+}
 .portfolio-overlay {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 370px;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  /* opacity: 0; */
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
+
 .portfolio-overlay-descriptions {
   color: var(--secondary-text-color);
   font-size: 18px;
