@@ -16,7 +16,22 @@
 /* Вторичный цвет текста #757575 #FFFFFF */
 /* Цвет лого #000000 #2196f3 */
 /* Цвет выделения и кнопок #2196f3 */
-
+.yk {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.yk-txt {
+  color: rgba(0, 0, 0, 0.03);
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-color);
@@ -209,6 +224,7 @@ a {
   opacity: 60%;
 }
 .page-footer {
+  position: relative;
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
